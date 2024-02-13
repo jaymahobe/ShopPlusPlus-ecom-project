@@ -1,0 +1,431 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 4px;
+  z-index: 20;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #888; /* Set the color of the thumb */
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #eee; /* Set the color of the track */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.floating-button {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  color: #df0808;
+  border: none;
+  width: 70px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 13%;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.floating-button.visible {
+  opacity: 1;
+}
+
+.floating-button:hover {
+  background-color: #373f5e;
+  color: #ffffff;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slowLoad {
+  from {
+    opacity: 0;
+    transform: translateY(2px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 2s ease-in-out;
+}
+.animation_product {
+  animation: slowLoad 1s ease;
+}
+
+.show-password-btn {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+/* login pop up css */
+
+.popup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* ===================================== */
+/* ratings and reviwes css */
+
+.containerStyle {
+  width: 100%;
+  padding: 19px;
+  height: 400px;
+  overflow-y: auto;
+
+  /* border-top: 0.8px solid #595757; */
+}
+
+.containerStyle::-webkit-scrollbar {
+  width: 3px; /* Set the width of the scrollbar */
+}
+
+.containerStyle::-webkit-scrollbar-thumb {
+  background-color: #888; /* Set the color of the thumb */
+  border-radius: 6px; /* Set the border radius of the thumb */
+}
+
+.containerStyle::-webkit-scrollbar-track {
+  background-color: #eee; /* Set the color of the track */
+}
+
+/* .gradient {
+  background: linear-gradient(to top, #1d1e1f, #272727);
+} */
+
+/* =================================== */
+/* cart css */
+.cart-container {
+  overflow-y: auto;
+  height: 400px;
+}
+.cart-container::-webkit-scrollbar {
+  width: 3px; /* Set the width of the scrollbar */
+}
+
+.cart-container::-webkit-scrollbar-thumb {
+  background-color: #888; /* Set the color of the thumb */
+  border-radius: 6px; /* Set the border radius of the thumb */
+}
+
+.cart-container::-webkit-scrollbar-track {
+  background-color: #eee; /* Set the color of the track */
+}
+/* =================================== */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.form-container {
+  animation: fadeIn 1s ease-out;
+}
+/* =================================== */
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.btn-1 {
+  background: rgb(96, 9, 240);
+  background: linear-gradient(0deg, rgb(9, 240, 51) 0%, rgb(53, 54, 52) 100%);
+  border: none;
+}
+
+.btn-1:before {
+  height: 0%;
+  width: 2px;
+}
+
+.btn-1:hover {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+}
+/* =================================== */
+.addressBook {
+  width: 100%;
+  height: 600px;
+  border-bottom: 0.8px solid slategray;
+  box-shadow: #595757 1px 0.8px 7px;
+  overflow-y: auto;
+  /* border: 0.8px solid #595757; */
+  /* border-top: 0.8px solid #595757; */
+}
+
+.addressBook::-webkit-scrollbar {
+  width: 3px; /* Set the width of the scrollbar */
+}
+
+.addressBook::-webkit-scrollbar-thumb {
+  background-color: #888; /* Set the color of the thumb */
+  border-radius: 6px; /* Set the border radius of the thumb */
+}
+
+.addressBook::-webkit-scrollbar-track {
+  background-color: #eee; /* Set the color of the track */
+}
+.image-container {
+  width: 300px; /* Set your desired height */
+}
+
+/* ================================================================ */
+
+/* payment gateway css for stripe */
+
+.stripe form {
+  width: 30vw;
+  min-width: 500px;
+  align-self: center;
+  box-shadow: 0px 0px 0px 0.5px rgba(50, 50, 93, 0.1),
+    0px 2px 5px 0px rgba(50, 50, 93, 0.1), 0px 1px 1.5px 0px rgba(0, 0, 0, 0.07);
+  border-radius: 7px;
+  padding: 40px;
+}
+
+#payment-message {
+  color: rgb(105, 115, 134);
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 12px;
+  text-align: center;
+}
+
+#payment-element {
+  margin-bottom: 24px;
+}
+
+/* Buttons and links */
+.stripe button {
+  background: #5469d4;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  border-radius: 4px;
+  border: 0;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  transition: all 0.2s ease;
+  box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
+  width: 100%;
+}
+
+.stripe button:hover {
+  filter: contrast(115%);
+}
+
+.stripe button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* spinner/processing state, errors */
+.spinner,
+.spinner:before,
+.spinner:after {
+  border-radius: 50%;
+}
+
+.spinner {
+  color: #ffffff;
+  font-size: 22px;
+  text-indent: -99999px;
+  margin: 0px auto;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  box-shadow: inset 0 0 0 2px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.spinner:before,
+.spinner:after {
+  position: absolute;
+  content: "";
+}
+
+.spinner:before {
+  width: 10.4px;
+  height: 20.4px;
+  background: #5469d4;
+  border-radius: 20.4px 0 0 20.4px;
+  top: -0.2px;
+  left: -0.2px;
+  -webkit-transform-origin: 10.4px 10.2px;
+  transform-origin: 10.4px 10.2px;
+  -webkit-animation: loading 2s infinite ease 1.5s;
+  animation: loading 2s infinite ease 1.5s;
+}
+
+.spinner:after {
+  width: 10.4px;
+  height: 10.2px;
+  background: #5469d4;
+  border-radius: 0 10.2px 10.2px 0;
+  top: -0.1px;
+  left: 10.2px;
+  -webkit-transform-origin: 0px 10.2px;
+  transform-origin: 0px 10.2px;
+  -webkit-animation: loading 2s infinite ease;
+  animation: loading 2s infinite ease;
+}
+
+@keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .stripe form {
+    width: 80vw;
+    min-width: initial;
+  }
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-5px);
+  }
+  40% {
+    transform: translateX(5px);
+  }
+  60% {
+    transform: translateX(-3px);
+  }
+  80% {
+    transform: translateX(3px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.search-bar {
+  animation: vibrate 0.5s ease-in-out infinite;
+}
+
+/* ======================================================= */
+/* colors */
+
+.navbar {
+  background-color: #2081c3;
+}
+
+.textsColor {
+  color: #f7f9f9;
+}
+
+.animated-text {
+  animation: slide 1.5s ease-out forwards; /* Animation name, duration, and easing */
+  opacity: 0; /* Initially hide the text */
+  transition: opacity 1s ease; /* Fade in transition */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

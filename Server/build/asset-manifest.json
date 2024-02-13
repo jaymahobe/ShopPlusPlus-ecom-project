@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.95f6072c.css",
+    "main.js": "/static/js/main.6a68621c.js",
+    "static/js/787.0f8d78ff.chunk.js": "/static/js/787.0f8d78ff.chunk.js",
+    "static/media/cartEmpty2png.png": "/static/media/cartEmpty2png.3731cce32f6d95c286da.png",
+    "static/media/aboutBanner2.jpeg": "/static/media/aboutBanner2.7417502714661bd9081d.jpeg",
+    "static/media/LandingPageBanner.mp4": "/static/media/LandingPageBanner.897fde22919e9b2fec5f.mp4",
+    "static/media/logo.webp": "/static/media/logo.8848e14fff1f28e1a537.webp",
+    "static/media/successfull.png": "/static/media/successfull.9db82d0fafca2e0c1fdf.png",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.95f6072c.css.map": "/static/css/main.95f6072c.css.map",
+    "main.6a68621c.js.map": "/static/js/main.6a68621c.js.map",
+    "787.0f8d78ff.chunk.js.map": "/static/js/787.0f8d78ff.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.95f6072c.css",
+    "static/js/main.6a68621c.js"
+  ]
+}
