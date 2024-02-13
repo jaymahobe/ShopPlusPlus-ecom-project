@@ -38,7 +38,7 @@ The Full Stack MERN E-commerce ShopPlus+ Application is a feature-rich platform 
 - **Back End:** Express.js
 - **Database:** MongoDB
 - **Authentication:** JSON Web Tokens (JWT)
-- **Payment:** Payment Gateway of Choice
+- **Payment:** Payment Gateway of Stripe
 
 ## Getting Started
 
