@@ -30,6 +30,7 @@ The Full Stack MERN E-commerce ShopPlus+ Application is a feature-rich platform 
 - **Product Filtering:** Users can filter products based on category and price.
 - **Order Tracking:** Users can track the status of their orders.
 - **Product Management:** Admins can create and manage product listings.
+- **Order Mangement:** Admin can edit all user's order status like Pending,Dispatched,Delivered,Cancelled.
 - **Category Creation:** Admins can create and manage product categories.
 - **Payment Processing:** Seamless integration for secure payment transactions.
 
