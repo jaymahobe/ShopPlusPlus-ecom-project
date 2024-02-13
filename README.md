@@ -26,10 +26,11 @@ The Full Stack MERN E-commerce ShopPlus+ Application is a feature-rich platform 
 ## Features
 
 - **User Authentication:** Secure user and admin authentication using JWT.
-- **Product Management:** Admins can create and manage product listings.
-- **Category Creation:** Admins can create and manage product categories.
+- **User Management:** Users can use addressbook for add, edit, delete address, Change password for change their current password after provide valid current password, And profile section for add and edit user information like username, email, phone number.
 - **Product Filtering:** Users can filter products based on category and price.
 - **Order Tracking:** Users can track the status of their orders.
+- **Product Management:** Admins can create and manage product listings.
+- **Category Creation:** Admins can create and manage product categories.
 - **Payment Processing:** Seamless integration for secure payment transactions.
 
 ## Technologies Used
@@ -86,6 +87,7 @@ User and admin authentication is handled using JWT. Tokens are generated upon su
 - **Product Selection:** Browse products, filter by category or price, and add to the cart.
 - **Payment:** Proceed to checkout, enter payment details, and complete the transaction.
 - **Order Tracking:** Users can track their orders in the user's order dashboard.
+- **User Dashboard:** Users can add, edit, delete information related to user profile.
 
 ## Admin Guide
 
