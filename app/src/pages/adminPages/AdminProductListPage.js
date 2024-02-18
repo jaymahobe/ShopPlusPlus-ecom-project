@@ -22,12 +22,6 @@ const sortOptions = [
   { name: "Price: Low to High", sort: "price", order: "asc", current: false },
   { name: "Price: High to Low", sort: "price", order: "desc", current: false },
 ];
-const brands = [
-  // { name: "Apple", href: "#" },
-  // { name: "Samsung", href: "#" },
-  // { name: "Google", href: "#" },
-  // { name: "Oneplus", href: "#" },
-];
 const filters = [
   {
     id: "brand",
@@ -35,46 +29,17 @@ const filters = [
     options: [
       { value: "Apple", label: "Apple", checked: false },
       { value: "Samsung", label: "Samsung", checked: false },
-      { value: "OPPO", label: "OPPO", checked: false },
-      { value: "Huawei", label: "Huawei", checked: false },
+      { value: "Google", label: "Google", checked: false },
+      { value: "Oneplus", label: "Oneplus", checked: false },
     ],
   },
   {
     id: "category",
     name: "Category",
     options: [
-      { value: "smartphones", label: "smartphones", checked: false },
+      { value: "smartphone", label: "smartphones", checked: false },
+      { value: "tablets", label: "Tablets", checked: false },
       { value: "laptops", label: "laptops", checked: false },
-      { value: "fragrances", label: "fragrances", checked: false },
-      { value: "skincare", label: "skincare", checked: false },
-      { value: "groceries", label: "groceries", checked: false },
-      { value: "home-decoration", label: "home decoration", checked: false },
-      { value: "furniture", label: "furniture", checked: false },
-      { value: "tops", label: "tops", checked: false },
-      { value: "womens-dresses", label: "womens dresses", checked: false },
-      { value: "womens-shoes", label: "womens shoes", checked: false },
-      { value: "mens-shirts", label: "mens shirts", checked: false },
-      { value: "mens-shoes", label: "mens shoes", checked: false },
-      { value: "mens-watches", label: "mens watches", checked: false },
-      { value: "womens-watches", label: "womens watches", checked: false },
-      { value: "womens-bags", label: "womens bags", checked: false },
-      { value: "womens-jewellery", label: "womens jewellery", checked: false },
-      { value: "sunglasses", label: "sunglasses", checked: false },
-      { value: "automotive", label: "automotive", checked: false },
-      { value: "motorcycle", label: "motorcycle", checked: false },
-      { value: "lighting", label: "lighting", checked: false },
-    ],
-  },
-  {
-    id: "size",
-    name: "Size",
-    options: [
-      { value: "2l", label: "2L", checked: false },
-      { value: "6l", label: "6L", checked: false },
-      { value: "12l", label: "12L", checked: false },
-      { value: "18l", label: "18L", checked: false },
-      { value: "20l", label: "20L", checked: false },
-      { value: "40l", label: "40L", checked: true },
     ],
   },
 ];
@@ -339,13 +304,6 @@ const AdminProductListPage = () => {
                   {/* Filters */}
                   <form className="hidden lg:block">
                     <h3 className="sr-only">Categories</h3>
-                    <ul className="space-y-4 border-b border-gray-200 pb-6 text-sm font-medium text-gray-900">
-                      {brands.map((category) => (
-                        <li key={category.name}>
-                          <a href={category.href}>{category.name}</a>
-                        </li>
-                      ))}
-                    </ul>
 
                     {filters.map((section) => (
                       <Disclosure
